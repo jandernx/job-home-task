@@ -16,9 +16,9 @@ create table users(
     --is_superuser bool not null default false, we can clarify is the user a superuser or not.
                                                 -- I don't mean that this is the only permissions' restriction in the whole system for the user, but it can be quite convenient to have this field here
     --updatettime timestamptz, field will show last update-statement made on this row
-    --create trigger t_merchants_bu_updated
+    --create trigger t_users_bu_updated
     --before update
-    --on merchants
+    --on users
     --for each row
     --execute procedure upd_updatettime();
     --create function upd_updatettime() returns trigger
